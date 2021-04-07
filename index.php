@@ -113,7 +113,7 @@ class MoveablePoint extends Point
 }
 
 $point = new Point(10, 20);
-echo $point->toString() . '<br>';
+echo $point->__toString() . '<br>';
 
 $movablePoint = new MoveablePoint(10, 20, 5, 7);
-echo $movablePoint->toString();
+echo $movablePoint->__toString();
