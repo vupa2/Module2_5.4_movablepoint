@@ -46,7 +46,7 @@ class Point
     $this->y = $y;
   }
 
-  public function toString()
+  public function __toString()
   {
     return "($this->x,$this->y)";
   }
@@ -99,7 +99,7 @@ class MoveablePoint extends Point
     return [$this->xSpeed, $this->ySpeed];
   }
 
-  public function toString()
+  public function __toString()
   {
     return "($this->x,$this->y),speed=($this->xSpeed,$this->ySpeed)";
   }
